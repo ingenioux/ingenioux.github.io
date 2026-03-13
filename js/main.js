@@ -17,14 +17,27 @@
   });
 
 
-	var fullHeight = function() {
+var fullHeight = function() {
 
-		$('.js-fullheight').css('height', $(window).height());
-		$(window).resize(function(){
-			$('.js-fullheight').css('height', $(window).height());
-		});
+  // Disable fullheight on mobile
+  if ($(window).width() < 768) {
+    $('.js-fullheight').css('height', 'auto');
+  } else {
+    $('.js-fullheight').css('height', $(window).height());
+  }
 
-	};
+  $(window).resize(function(){
+    if ($(window).width() < 768) {
+      $('.js-fullheight').css('height', 'auto');
+    } else {
+      $('.js-fullheight').css('height', $(window).height());
+    }
+  });
+
+};
+
+
+	
 	fullHeight();
 
 	// loader
