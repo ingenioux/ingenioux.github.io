@@ -19,19 +19,9 @@
 
 var fullHeight = function() {
 
-  // Disable fullheight on mobile
-  if ($(window).width() < 768) {
-    $('.js-fullheight').css('height', 'auto');
-  } else {
-    $('.js-fullheight').css('height', $(window).height());
-  }
-
+  $('.js-fullheight').css('height', $(window).height());
   $(window).resize(function(){
-    if ($(window).width() < 768) {
-      $('.js-fullheight').css('height', 'auto');
-    } else {
-      $('.js-fullheight').css('height', $(window).height());
-    }
+    $('.js-fullheight').css('height', $(window).height());
   });
 
 };
