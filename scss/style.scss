@@ -1992,3 +1992,15 @@ textarea.form-control {
 		opacity: 0;
 	}
 }
+
+@media (max-width: 700px) {
+
+  #home-section .slider-item {
+    height: 450px !important;   // smaller height for mobile
+  }
+
+  #home-section .js-fullheight {
+    height: 450px !important;
+  }
+
+}
