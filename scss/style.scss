@@ -10,28 +10,6 @@ $darken: #232931;
 $primary: #ffbd39;
 $secondary: #a0f669;
 
-// Fix mobile scroll issue
-@media (max-width: 768px) {
-
-  .js-fullheight {
-    height: auto !important;
-    min-height: 100vh;
-  }
-
-  .hero {
-    height: auto !important;
-  }
-
-  .slider-item {
-    height: auto !important;
-  }
-
-}
-
-
-
-
-
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;
