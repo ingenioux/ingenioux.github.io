@@ -1986,19 +1986,9 @@ textarea.form-control {
 }
 
 
-@media (max-width: 768px) {
-
-  #home-section,
-  .hero,
-  .home-slider,
-  .slider-item {
-    height: auto !important;
-    min-height: auto !important;
-  }
-
-  .slider-item {
-    padding-top: 120px;
-    padding-bottom: 60px;
-  }
-
+@media (max-width: 700px) {
+	.img_bsck_edit{
+		display: none;
+		opacity: 0;
+	}
 }
