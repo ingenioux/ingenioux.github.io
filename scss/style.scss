@@ -396,16 +396,24 @@ h1, h2, h3, h4, h5,
 		position: relative;
 		height: 750px;
 		z-index: 0;
-		.slider-item {
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-position: center center;
-			height: 750px;
-			position: relative;
-			z-index: 0;
-			@include media-breakpoint-down(lg){
-				background-position: center center !important;
-			}
+.slider-item {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 750px;
+  position: relative;
+  z-index: 0;
+
+  @include media-breakpoint-down(lg){
+    background-position: center center !important;
+  }
+
+  // Mobile height adjustment
+  @include media-breakpoint-down(md){
+    height: 450px;
+  }
+
+}
 			.overlay{
 				position: absolute;
 				top: 0;
@@ -502,13 +510,18 @@ h1, h2, h3, h4, h5,
 				// 	span.play{
 				// 	}
 				// }
-				.subheading{
-					color: $black;
-					font-weight: 600;
-					font-size: 14px;
-					letter-spacing: 3px;
-					text-transform: uppercase;
-					color: $primary;
+			.subheading{
+  				color: $black;
+ 				font-weight: 600;
+  				font-size: 14px;
+  				letter-spacing: 3px;
+  				text-transform: uppercase;
+  				color: $primary;
+
+  			// Mobile adjustment
+  			@include media-breakpoint-down(md){
+    			margin-top: 40px;
+  					}
 				}
 				.text{
 					position: relative;
